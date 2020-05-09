@@ -18,6 +18,7 @@ using namespace std;
 #include <GL/glu.h>
 #include <GL/gl.h>
 #include <GL/glut.h>
+#include "GLFW/glfw3.h"
 
 /*=======SDL2=======*/
 #include <SDL2/SDL.h>

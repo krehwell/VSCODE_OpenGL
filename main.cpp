@@ -1,4 +1,7 @@
-#include "common.h"
+#define GLUT_DISABLE_ATEXIT_HACK
+#include <windows.h>
+#include <gl/glut.h>
+#include <iostream>
 
 GLfloat ctrlpoints[4][4][3] = {
     {{-1.5, 1.0, -1.5}, {-0.5, 1.0, -1.5}, {0.5, 1.0, -1.5}, {1.5, 1.0, -1.5}},
@@ -53,6 +56,7 @@ void reshape(int w, int h)
                 5.0 * (GLfloat)w / (GLfloat)h, -5.0, 5.0, -5.0, 5.0);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
+    std::cout << "game is cool";
 }
 
 int main(int argc, char **argv)
